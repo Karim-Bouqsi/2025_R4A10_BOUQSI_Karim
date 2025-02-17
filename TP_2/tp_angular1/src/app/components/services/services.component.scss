@@ -1,0 +1,34 @@
+.services {
+  text-align: center;
+  padding: 60px 30px;
+}
+
+.services-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 30px;
+  padding: 30px;
+}
+
+@media (max-width: 600px) {
+  .services {
+      padding: 40px 15px;
+  }
+
+  .services-container {
+      grid-template-columns: 1fr;
+      gap: 20px;
+      padding: 20px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services {
+      padding: 80px 50px;
+  }
+
+  .services-container {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+  }
+}

@@ -1,0 +1,35 @@
+nav {
+    ul {
+      gap: 32px;
+      li a {
+        text-decoration: none;
+        color: black;
+        font-size: 15px;
+  
+        &.active {
+          font-weight: bold;
+        }
+      }
+    }
+  
+    @media (max-width: 768px) {
+      display: none;
+  
+      &.mobile-open {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 120px;
+        right: 0;
+        background: white;
+        width: 100%;
+        padding: 15px;
+      }
+  
+      ul {
+        flex-direction: column;
+        gap: 15px;
+      }
+    }
+  }
+  

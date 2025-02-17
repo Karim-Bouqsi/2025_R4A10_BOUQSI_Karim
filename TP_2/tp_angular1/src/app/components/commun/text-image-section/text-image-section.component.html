@@ -1,0 +1,18 @@
+<section class="text-image-section">
+  <div class="text-content">
+    <h1>{{ title }}</h1>
+    <p>{{ description }}</p>
+
+    @if (buttonText) {
+      <app-button 
+        [text]="buttonText" 
+        [bgColor]="buttonBgColor" 
+        [textColor]="buttonTextColor">
+      </app-button>  
+    }
+  </div>
+
+  <div class="image-content">
+    <img [attr.src]="imageSrc" [attr.alt]="title" />
+  </div>
+</section>

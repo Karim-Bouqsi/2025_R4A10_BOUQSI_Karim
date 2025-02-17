@@ -1,0 +1,16 @@
+<section class="services">
+  <app-service-header></app-service-header>
+
+  <div class="services-container">
+    @for (service of services; track service.title) {
+      <app-service-card [service]="service"></app-service-card>
+    }
+  </div>
+
+  <app-button 
+    text="Learn more" 
+    bgColor="white" 
+    textColor="#458FF6" 
+    class="learn-more-btn">
+  </app-button>
+</section>

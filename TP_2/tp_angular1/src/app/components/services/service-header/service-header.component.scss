@@ -1,0 +1,46 @@
+.services-header {
+  margin-bottom: 50px;
+}
+
+.services-title {
+  padding-bottom: 20px;
+  font-size: 40px;
+  font-weight: bold;
+  color: black;
+}
+
+.services-line {
+  width: 60px;
+  height: 3px;
+  background-color: #000;
+  margin: 10px auto;
+}
+
+.services-description {
+  padding-top: 20px;
+  font-size: 20px;
+  color: grey;
+  max-width: 1100px;
+  margin: auto;
+}
+
+@media (max-width: 600px) {
+  .services-title {
+      font-size: 30px;
+  }
+
+  .services-description {
+      font-size: 16px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .services-title {
+      font-size: 45px;
+  }
+
+  .services-description {
+      font-size: 22px;
+      max-width: 1200px;
+  }
+}

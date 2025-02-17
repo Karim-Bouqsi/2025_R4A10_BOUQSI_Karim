@@ -1,0 +1,66 @@
+.service-card {
+  background: white;
+  box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.15);
+  border-radius: 8px;
+  padding: 30px;
+  cursor: pointer;
+  text-align: left;
+}
+
+.service-icon {
+  width: 60px;
+  height: 60px;
+  object-fit: contain;
+  margin-bottom: 40px;
+}
+
+.service-title {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: black;
+}
+
+.service-description {
+  min-height: 80px;
+  display: flex;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .service-card {
+      padding: 20px;
+  }
+
+  .service-icon {
+      width: 50px;
+      height: 50px;
+      margin-bottom: 20px;
+  }
+
+  .service-title {
+      font-size: 18px;
+  }
+
+  .service-description {
+      font-size: 14px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .service-card {
+      padding: 40px;
+  }
+
+  .service-icon {
+      width: 70px;
+      height: 70px;
+  }
+
+  .service-title {
+      font-size: 22px;
+  }
+
+  .service-description {
+      font-size: 18px;
+  }
+}

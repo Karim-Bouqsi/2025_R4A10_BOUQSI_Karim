@@ -1,0 +1,67 @@
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 5rem;
+    position: relative;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.text-content {
+    max-width: 500px;
+    line-height: 1.8; /* Espacement entre les lignes pour une meilleure lisibilité */
+    margin-right: 2rem; /* Ajoute de l'espace entre le texte et l'image */
+}
+
+.text-content h1 {
+    font-size: 3rem; /* Augmente la taille du titre */
+    font-weight: bold;
+    margin-bottom: 40px !important; /* Ajoute plus d'espace après le titre */
+    color: #000; /* Texte bien contrasté */
+}
+
+.text-content p {
+    font-size: 1.2rem; /* Augmente la taille du texte descriptif */
+    color: #666; /* Couleur légèrement grise pour la lecture */
+    margin-bottom: 2.5rem !important; /* Ajoute plus d'espace après le paragraphe */
+}
+
+
+.consult-btn {
+    padding: 1rem 2.5rem; /* Taille plus grande pour le bouton */
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 50px;
+    font-size: 1.2rem; /* Augmente la taille du texte du bouton */
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.consult-btn:hover {
+    background-color: #0056b3; /* Couleur plus sombre au survol */
+}
+
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+
+.decoration-image {
+    position: absolute;
+    top: 100px; /* Ajuste en haut */
+    left: -250px; /* Ajuste complètement à gauche */
+    width: 120px; /* Taille visible */
+    z-index: 0; /* Arrière-plan */
+}

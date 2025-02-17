@@ -1,0 +1,20 @@
+<div class="carousel-navigation">
+    <button class="nav-arrow left" (click)="prevSlide()">
+      <img src="assets/arrow-left.png" alt="Previous">
+    </button>
+  
+    <div class="dots">
+      @for (i of totalSlidesArray(); track $index) {
+        <span 
+          class="dot" 
+          [class.active]="i === currentSlide"
+          (click)="slideChanged.emit(i)">
+        </span>
+      }
+    </div>
+  
+    <button class="nav-arrow right" (click)="nextSlide()">
+      <img src="assets/arrow-right.png" alt="Next">
+    </button>
+  </div>
+  

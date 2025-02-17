@@ -1,0 +1,13 @@
+<header class="header" [class.menu-open]="menuOpen">
+  <app-logo></app-logo>
+
+  <app-navigation [menuOpen]="menuOpen"></app-navigation>
+
+  <app-button 
+    class="menu-toggle d-md-none"
+    [text]="menuOpen ? '✖' : '☰'" 
+    [bgColor] ="'#458FF6'" 
+    [textColor] ="'white'"
+    (click)="toggleMenu()">
+  </app-button>
+</header>
