@@ -1,0 +1,5 @@
+<div class="voyages-container">
+  @for (voyage of voyages; track voyage.id) {
+      <app-voyage-card [voyage]="voyage" (supprimer)="supprimer($event)"></app-voyage-card>
+  }
+</div>

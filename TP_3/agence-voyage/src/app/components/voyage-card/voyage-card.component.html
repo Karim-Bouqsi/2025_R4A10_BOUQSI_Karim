@@ -1,0 +1,8 @@
+<div class="voyage-card">
+    <h3>{{ voyage.destination }}</h3>
+    <p>{{ voyage.description | slice:0:20 }}...</p>
+    <p><strong>{{ voyage.prix | currency:'EUR' }}</strong></p>
+    <button (click)="supprimerVoyage()">Supprimer</button>
+    <button [routerLink]="['/travel', voyage.id]">Voir Détails</button>
+  </div>
+  

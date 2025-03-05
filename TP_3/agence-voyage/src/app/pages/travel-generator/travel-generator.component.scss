@@ -1,0 +1,44 @@
+h2 {
+  color: #2a9d8f;
+}
+
+button {
+  background-color: #e76f51;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin: 10px 0;
+  transition: background-color 0.2s ease-in-out;
+}
+
+button:hover {
+  background-color: #d55b45;
+}
+
+div {
+  background: white;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  text-align: center;
+  margin: auto;
+}
+
+@media (min-width: 1200px) {
+  div {
+      width: 350px;
+      padding: 25px;
+  }
+
+  h2 {
+      font-size: 24px;
+  }
+
+  button {
+      padding: 12px 18px;
+      font-size: 18px;
+  }
+}

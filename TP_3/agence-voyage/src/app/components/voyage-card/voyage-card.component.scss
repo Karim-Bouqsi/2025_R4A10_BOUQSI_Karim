@@ -1,0 +1,55 @@
+.voyage-card {
+  background: white;
+  padding: 15px;
+  border-radius: 8px;
+  width: 250px;
+  text-align: center;
+  border: 1px solid black;
+}
+
+.voyage-card h3 {
+  color: #2a9d8f;
+}
+
+.voyage-card p {
+  font-size: 14px;
+}
+
+button {
+  margin: 5px;
+  padding: 8px 12px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:first-of-type {
+  background-color: #e63946;
+  color: white;
+}
+
+button:last-of-type {
+  background-color: #f4a261;
+  color: white;
+}
+
+@media (min-width: 1200px) {
+  .voyage-card {
+      width: 300px;
+      padding: 20px;
+      border-radius: 10px;
+  }
+
+  .voyage-card h3 {
+      font-size: 20px;
+  }
+
+  .voyage-card p {
+      font-size: 16px;
+  }
+
+  button {
+      padding: 10px 15px;
+      font-size: 16px;
+  }
+}

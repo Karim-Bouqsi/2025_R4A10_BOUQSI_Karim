@@ -1,0 +1,41 @@
+main {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.w-100 {
+  display: flex;
+  justify-content: center;
+}
+
+app-voyage-list {
+  width: 100%;
+  max-width: 1200px;
+}
+
+app-pagination {
+  display: flex;
+  justify-content: center;
+}
+
+@media (min-width: 1200px) {
+  main {
+      justify-content: flex-start;
+      padding-top: 50px;
+  }
+
+  .w-100 {
+      justify-content: space-evenly;
+  }
+
+  app-voyage-list {
+      max-width: 1400px;
+  }
+
+  app-pagination {
+      margin-top: 20px;
+  }
+}

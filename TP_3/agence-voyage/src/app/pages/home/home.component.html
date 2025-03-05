@@ -1,0 +1,18 @@
+<main class="d-flex flex-column justify-content-center align-items-center min-vh-100">
+  <h2 class="text-center">Nos Voyages</h2>
+  <div class="w-100 d-flex justify-content-center">
+    <app-voyage-list 
+      [voyages]="voyagesAffiches" 
+      (supprimerVoyage)="supprimerVoyage($event)">
+    </app-voyage-list>
+  </div>
+  <div class="mt-4">
+    <app-pagination 
+      [pageActuelle]="pageActuelle"
+      [voyagesParPage]="voyagesParPage"
+      [totalVoyages]="voyages.length"
+      (pagePrecedente)="pagePrecedente()"
+      (pageSuivante)="pageSuivante()">
+    </app-pagination>
+  </div>
+</main>

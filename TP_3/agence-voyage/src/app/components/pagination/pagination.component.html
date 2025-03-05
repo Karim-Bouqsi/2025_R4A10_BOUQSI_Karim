@@ -1,0 +1,6 @@
+<div class="pagination">
+    <button (click)="pagePrecedente.emit()" [disabled]="pageActuelle === 1">Précédent</button>
+    <span>Page {{ pageActuelle }}</span>
+    <button (click)="pageSuivante.emit()" [disabled]="pageActuelle * voyagesParPage >= totalVoyages">Suivant</button>
+  </div>
+  

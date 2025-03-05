@@ -1,0 +1,14 @@
+<h2>Génération d’un Voyage Aléatoire</h2>
+
+<button (click)="genererVoyage()">Générer un Voyage</button>
+
+@if (voyageGenere) {
+  <div>
+    <h3>{{ voyageGenere.destination }}</h3>
+    <p>{{ voyageGenere.description }}</p>
+    <p><strong>Prix : {{ voyageGenere.prix | currency:'EUR' }}</strong></p>
+    <button (click)="ajouterVoyage()">Ajouter ce voyage</button>
+  </div>
+} @else {
+  <p>Appuyez sur le bouton pour générer un voyage.</p>
+}
