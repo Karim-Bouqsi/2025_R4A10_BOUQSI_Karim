@@ -1,0 +1,27 @@
+<form [formGroup]="bookForm" (ngSubmit)="onSubmit()">
+    <label for="title">Titre :</label>
+    <input type="text" id="title" formControlName="title" />
+    @if (bookForm.get('title')?.invalid && bookForm.get('title')?.touched) {
+    <p>
+      Le titre est requis (min. 2 caractères, max. 35)
+    </p>
+    }
+  
+    <label for="author">Auteur :</label>
+    <input type="text" id="author" formControlName="author" />
+    @if (bookForm.get('author')?.invalid && bookForm.get('author')?.touched) {
+    <p>
+      L'auteur est requis (min. 5 caractères, max. 50)
+    </p>
+    }
+  
+    <label for="description">Description :</label>
+    <textarea id="description" formControlName="description"></textarea>
+    @if (bookForm.get('description')?.invalid && bookForm.get('description')?.touched) {
+    <p>
+      La description est requise (min. 10 caractères, max. 255)
+    </p>
+    }
+  
+    <button type="submit" [disabled]="bookForm.invalid">Créer le livre</button>
+  </form>

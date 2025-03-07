@@ -1,0 +1,16 @@
+<div class="books-list">
+  <h2>Liste des livres</h2>
+  <div class="grid">
+    @for (book of books; track book.id){
+    <div class="book-card">
+      <a [routerLink]="['/book', book.id]">
+        <img [src]="book.coverUrl" alt="{{ book.title }} cover" class="book-cover" />
+        <div class="book-info">
+          <h3>{{ book.title }}</h3>
+          <p>{{ book.author }}</p>
+        </div>
+      </a>
+    </div>
+    }
+  </div>
+</div>

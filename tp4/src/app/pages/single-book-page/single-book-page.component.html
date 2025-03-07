@@ -1,0 +1,8 @@
+@if(book){
+<div class="book-details">
+  <h2>{{ book.title }}</h2>
+  <p class="author">Auteur : {{ book.author }}</p>
+  <p class="description">{{ book.description }}</p>
+  <img [src]="book.coverUrl" alt="{{ book.title }} cover" class="cover" />
+</div>
+}

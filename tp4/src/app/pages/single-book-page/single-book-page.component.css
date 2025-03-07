@@ -1,0 +1,20 @@
+.book-details {
+  text-align: center;
+  background: #f5f5f5;
+  padding: 2rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.author {
+  font-weight: bold;
+  color: #6200ea;
+}
+.description {
+  font-size: 1.1rem;
+  margin: 1rem 0;
+}
+.cover {
+  max-width: 200px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+}
